@@ -10,7 +10,7 @@ const musicSchema = new mongoose.Schema({
     required: true,
   },
   artist: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId, // Acts as foreign key
     ref: "user", // this is reference given -> in which collection in DB we can find the ObjectId
     required: true,
   },
